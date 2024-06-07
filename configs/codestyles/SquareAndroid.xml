@@ -109,6 +109,8 @@
     <option name="CONTINUATION_INDENT_FOR_EXPRESSION_BODIES" value="false" />
     <option name="WRAP_EXPRESSION_BODY_FUNCTIONS" value="1" />
     <option name="IF_RPAREN_ON_NEW_LINE" value="true" />
+    <!-- TODO: remove in favor of `codeStyleSettings` once this is fixed: https://youtrack.jetbrains.com/issue/KTIJ-22516. -->
+    <option name="ALLOW_TRAILING_COMMA" value="true" />
   </JetCodeStyleSettings>
   <XML>
     <option name="XML_ALIGN_ATTRIBUTES" value="false" />
@@ -238,9 +240,12 @@
     </indentOptions>
   </codeStyleSettings>
   <codeStyleSettings language="kotlin">
+    <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+    <option name="LINE_COMMENT_AT_FIRST_COLUMN" value="false" />
+    <option name="LINE_COMMENT_ADD_SPACE" value="true" />
     <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
     <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
-    <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="1" />
+    <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
     <option name="ALIGN_MULTILINE_PARAMETERS" value="false" />
     <option name="CALL_PARAMETERS_WRAP" value="1" />
     <option name="CALL_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
@@ -249,14 +254,16 @@
     <option name="METHOD_PARAMETERS_LPAREN_ON_NEXT_LINE" value="true" />
     <option name="METHOD_PARAMETERS_RPAREN_ON_NEXT_LINE" value="true" />
     <option name="EXTENDS_LIST_WRAP" value="5" />
-    <option name="METHOD_CALL_CHAIN_WRAP" value="2" />
+    <option name="METHOD_CALL_CHAIN_WRAP" value="5" />
     <option name="ASSIGNMENT_WRAP" value="1" />
     <option name="METHOD_ANNOTATION_WRAP" value="1" />
     <option name="FIELD_ANNOTATION_WRAP" value="1" />
     <option name="ENUM_CONSTANTS_WRAP" value="2" />
+    <option name="ALLOW_TRAILING_COMMA" value="true" />
+    <option name="LINE_BREAK_AFTER_MULTILINE_WHEN_ENTRY" value="false" />
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
-      <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      <option name="CONTINUATION_INDENT_SIZE" value="2" />
       <option name="TAB_SIZE" value="2" />
     </indentOptions>
   </codeStyleSettings>
